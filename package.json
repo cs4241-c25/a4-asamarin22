@@ -4,9 +4,16 @@
   "description": "WPI CS4241-C25 Assignment A2",
   "author": "",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run dev --prefix client",
+    "server": "nodemon server/server.js",
+    "build": "next build",
+    "start:prod": "next start",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
+    "create-react-app": "^5.1.0",
     "express": "^4.21.2",
     "express-session": "^1.18.1",
     "mime": "^2.4.4",
