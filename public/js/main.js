@@ -102,13 +102,12 @@ function generateTable(data) {
     let container = document.getElementById("results");
 
     let table = document.createElement("table");
-    table.border = "1";
+    table.classList.add("min-w-full", "table-auto", "border-collapse", "border", "border-gray-200"); // Tailwind classes for styling
 
     let thead = document.createElement("thead");
     let headerRow = document.createElement("tr");
 
-    //let headers = Object.keys(data[0]); // Get column headers
-    // Defined a fixed set of headers (changed since debugging a3)
+    // Fixed headers as defined
     let headers = [
         "Full Name",
         "Email",
@@ -124,6 +123,7 @@ function generateTable(data) {
     headers.forEach(headerText => {
         let th = document.createElement("th");
         th.textContent = headerText; // Format headers
+        th.classList.add("px-4", "py-2", "text-left", "bg-blue-100", "border-b", "font-semibold"); // Tailwind styles for table headers
         headerRow.appendChild(th);
     });
 
@@ -134,11 +134,14 @@ function generateTable(data) {
 
     data.forEach(entry => {
         let row = document.createElement("tr");
+
         headers.forEach(header => {
             let td = document.createElement("td");
             td.textContent = entry[header] || "N/A"; // Handle missing values
+            td.classList.add("px-4", "py-2", "border-b", "text-gray-700"); // Tailwind styles for table cells
             row.appendChild(td);
         });
+
         tbody.appendChild(row);
     });
 
@@ -147,6 +150,7 @@ function generateTable(data) {
     container.innerHTML = ""; // Clear previous content
     container.appendChild(table);
 }
+
 
 //Refreshes all the rental bookings stored on the db
 async function fetchUpdatedData(rentCreated) {
