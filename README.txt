@@ -2,9 +2,6 @@ CS 4241: Webware C25 - Assignment A4 - Aleksandr Samarin - README File
 
 Aleksandr Samarin: a4-asamarin22.glitch.me
 
-Note: I am having a similar issue to Assignment A3 where when I upload on Glitch there seems to be a problem with Node version not being compatible thus throwing errors.
-The web application runs perfectly smooth locally. Below are the instructions run  it locally. The database is using a MongoDB Atlas connection so it is not becasue of a local db.
-
 Local Bike Rental Service
 
 For this project I designed a simple website to accept rental bookings for certain types of bicycles.
