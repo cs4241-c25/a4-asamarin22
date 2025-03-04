@@ -5,6 +5,8 @@ Aleksandr Samarin: a4-asamarin22.glitch.me
 *************Glitch Deployment Note***************
 I am having an issue when deploying that does not allow me to run both start scripts concurrently (I run server and client seperatly).
 This link is to an old deployment of my A4 which still runs but is not built on the React framework. Current main branch is Vite+React.
+
+EDIT: I have succesfully deployed my project assignment A4 on glitch.
 **************************************************
 
 Local Bike Rental Service
