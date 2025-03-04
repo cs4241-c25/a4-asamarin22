@@ -55,3 +55,4 @@ To actually see what is being added to the database or deleted, you would have t
 My main challenge for this assignment was regarding the use of React in the front end. As I had originally used
 Next.js for the front-end this lead to a lot of configuration issues regarding my React app. However, I managed 
 to successfully run the application using Vite+React. A big challenge was running the client and server seperately.
+Another challenge that I faced was getting the Github Passport Strategy setup in my Vite+React environment.
